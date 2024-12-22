@@ -34,7 +34,16 @@
   },
   "gallery": {
     "title": "Gallery"
-  },
+  },"surroundings": {
+    "title": "What's in the surroundings",
+    "nationalPark": "Slovak Karst National Park",
+    "restiFortuna": "Resti - Fortuna Restaurant",
+    "gasthofLevanda": "Gasthof Levanda Restaurant",
+    "gyrosBurger": "Gyros Burger Restaurant",
+    "stosSkiLift": "Štós Ski Lift",
+    "trainTornanadaska": "Tornanádaska Train",
+    "kosiceAirport": "Košice International Airport"
+},
   "contact": {
     "title": "Contact Us",
     "address": {

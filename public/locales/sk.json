@@ -32,6 +32,16 @@
     "perNight": "za noc",
     "bookButton": "Chcem rezervovať"
   },
+   "surroundings": {
+    "title": "Čo sa nachádza v okolí",
+    "nationalPark": "Národný park Slovenský Kras",
+    "restiFortuna": "Reštaurácia Resti - Fortuna",
+    "gasthofLevanda": "Reštaurácia Gasthof Levanda",
+    "gyrosBurger": "Reštaurácia Gyros Burger",
+    "stosSkiLift": "Štós Ski Lift",
+    "trainTornanadaska": "Vlak Tornanádaska",
+    "kosiceAirport": "Medzinárodné letisko Košice"
+  },
   "gallery": {
     "title": "Galéria"
   },

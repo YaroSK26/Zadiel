@@ -7,6 +7,7 @@ import Rooms from "@/components/Rooms";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
+import SurroundingsSection from "@/components/SurroundingsSection";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -34,6 +35,14 @@ export default function Page() {
         variants={fadeInUp}
       >
         <Rooms />
+      </motion.div>
+       <motion.div
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+      >
+      <SurroundingsSection/>
       </motion.div>
       <motion.div
         initial="initial"

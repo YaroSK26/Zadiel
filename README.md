@@ -38,4 +38,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 cookie yes email
 eemail js zmenit email 
-preklady

@@ -35,7 +35,17 @@
   },
   "gallery": {
     "title": "Galéria"
-  },
+  },"surroundings": {
+    "title": "Mi található a környéken",
+    "nationalPark": "Szlovák Karszt Nemzeti Park",
+    "restiFortuna": "Resti - Fortuna Étterem",
+    "gasthofLevanda": "Gasthof Levanda Étterem",
+    "gyrosBurger": "Gyros Burger Étterem",
+    "stosSkiLift": "Štós Sífelvonó",
+    "trainTornanadaska": "Tornanádaska Vonat",
+    "kosiceAirport": "Kassa Nemzetközi Repülőtér"
+}
+,
   "contact": {
     "title": "Lépjen kapcsolatba velünk",
     "address": {
