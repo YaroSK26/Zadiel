@@ -1,8 +1,10 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
-export function Navbar() {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -15,7 +17,6 @@ export function Navbar() {
   ];
 
   useEffect(() => {
-    // Set initial window width
     setIsWideScreen(window.innerWidth > 768);
 
     const handleScroll = () => {
@@ -46,63 +47,112 @@ export function Navbar() {
     "relative transition-colors duration-200 uppercase before:content-[''] before:absolute before:bottom-[-3px] before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-[width] before:duration-500 before:ease-in-out hover:before:w-full";
 
   return (
-    <nav
+    <motion.nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         hasScrolled ? "bg-[#111827]" : ""
       }`}
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.2 }}
     >
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Mobile Brand/Logo */}
-        <div className="flex-shrink-0 md:hidden">
-          <a href="#" className="text-xl uppercase font-bold text-white">
-            ZÁDIEL 
+        <motion.div
+          className="flex-shrink-0 md:hidden"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <a href="#" className="text-xl  uppercase font-bold text-white">
+            <img src="./zadiel.png" className="w-28 h-12" alt="logo zadiel" />
           </a>
-        </div>
+        </motion.div>
         {/* Mobile Menu Button */}
-        <button
+        <motion.button
           onClick={() => setIsOpen(!isOpen)}
           className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white md:hidden"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        </motion.button>
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-center space-x-12 text-white flex-grow">
-          {navItems.slice(0, 2).map((item) => (
-            <a key={item.href} href={item.href} className={navLinkStyles}>
+        <motion.div
+          className="hidden md:flex items-center justify-center space-x-12 text-white flex-grow"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          {navItems.slice(0, 2).map((item, index) => (
+            <motion.a
+              key={item.href}
+              href={item.href}
+              className={navLinkStyles}
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+            >
               {item.label}
-            </a>
+            </motion.a>
           ))}
-          <div className="flex-shrink-0 mx-8">
-            <a href="#" className="text-xl uppercase font-bold text-white">
-              ZÁDIEL
+          <motion.div
+            className="flex-shrink-0 mx-8"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <a href="#" className="text-xl  uppercase font-bold text-white">
+              <img src="./zadiel.png" className="w-28 h-12" alt="logo zadiel" />
             </a>
-          </div>
-          {navItems.slice(2).map((item) => (
-            <a key={item.href} href={item.href} className={navLinkStyles}>
+          </motion.div>
+          {navItems.slice(2).map((item, index) => (
+            <motion.a
+              key={item.href}
+              href={item.href}
+              className={navLinkStyles}
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
+            >
               {item.label}
-            </a>
+            </motion.a>
           ))}
-        </div>
+        </motion.div>
       </div>
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#111827]">
+        <motion.div
+          className="md:hidden bg-[#111827]"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+        >
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
-              <a
+              <motion.a
                 key={item.href}
                 href={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium text-white ${navLinkStyles}`}
                 onClick={() => setIsOpen(false)}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
               >
                 {item.label}
-              </a>
+              </motion.a>
             ))}
           </div>
-        </div>
+        </motion.div>
       )}
-    </nav>
+    </motion.nav>
   );
-}
+};
 
 export default Navbar;
