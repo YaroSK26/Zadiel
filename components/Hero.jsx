@@ -5,8 +5,11 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "../components/Navbar";
 
-const Hero= () => {
+const Hero = () => {
+  const translations = useTranslations();
+
   return (
     <section id="home" className="relative h-screen">
       <Image
@@ -33,7 +36,7 @@ const Hero= () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Tourist accommodation Zádiel
+            {translations?.hero?.title}
           </motion.h1>
           <motion.p
             className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8"
@@ -42,7 +45,7 @@ const Hero= () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            amazing hostel for travelers
+            {translations?.hero?.subtitle }
           </motion.p>
           <Link
             href="https://www.booking.com/hotel/sk/turisticka-ubytovna-zadiel-turistaszallo-szadelo.sk.html?aid=304142&label=gen173nr-1FCAEoggI46AdIIlgEaM0BiAEBmAEiuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKemJy7BsACAdICJGI3MGUwZjU2LWQ2MmItNGNhYy05MTEwLTA0ZWE2ZjEyMDliY9gCBeACAQ&sid=4e31bd7b6e9259ef598e194aa0cf0025&dest_id=13138054&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1734806576&srpvid=ccce839538c90521&type=total&ucfs=1&#availability"
@@ -53,7 +56,7 @@ const Hero= () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span>I want to book</span>
+              <span>{translations?.hero?.bookButton}</span>
               <ArrowRight className="w-4 h-4" />
             </motion.button>
           </Link>

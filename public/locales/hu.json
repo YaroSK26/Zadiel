@@ -1,0 +1,68 @@
+
+{
+  "nav": {
+    "about": "RÓLUNK",
+    "accommodation": "SZÁLLÁS",
+    "gallery": "GALÉRIA",
+    "contact": "KAPCSOLAT"
+  },
+  "hero": {
+    "title": "Turistaszálló Zádiel",
+    "subtitle": "csodálatos szálláshely utazóknak",
+    "bookButton": "Foglalni szeretnék"
+  },
+  "about": {
+    "welcome": "Üdvözöljük Zádielban",
+    "description": "Fedezze fel a kényelmes szállást Zádielska dolina szívében. Ideális túrázóknak és természetkedvelőknek, könnyű hozzáféréssel a túraútvonalakhoz.",
+    "amenities": {
+      "parking": "Ingyenes parkolás",
+      "wifi": "Ingyenes WiFi",
+      "kitchen": "Közös konyha",
+      "location": "Kiváló elhelyezkedés"
+    }
+  },
+  "rooms": {
+    "title": "Szállás a Zádiel völgyben",
+    "description": "A Turistaszálló Zádiel szálláshely kerttel, ingyenes privát parkolóval és terasszal rendelkezik. Ruhásszekrény és ágynemű is biztosított.",
+    "types": {
+      "double": "Szoba franciaággyal",
+      "quad": "Négyágyas szoba",
+      "twin": "Szoba 2 külön ággyal"
+    },
+    "priceFrom": "tól",
+    "perNight": "éjszakánként",
+    "bookButton": "Foglalni szeretnék"
+  },
+  "gallery": {
+    "title": "Galéria"
+  },
+  "contact": {
+    "title": "Lépjen kapcsolatba velünk",
+    "address": {
+      "label": "Cím",
+      "value": "Zádiel 25, 044 02 Zádiel, Szlovákia"
+    },
+    "phone": {
+      "label": "Telefon",
+      "value": "+421 908 262 669"
+    },
+    "email": {
+      "label": "Email",
+      "value": "info@zadiel-accommodation.sk"
+    },
+    "form": {
+      "name": "Név",
+      "email": "Email",
+      "message": "Üzenet",
+      "send": "Üzenet küldése",
+      "sending": "Küldés...",
+      "success": "Az üzenetet sikeresen elküldtük!",
+      "error": "Az üzenet küldése nem sikerült. Kérjük, próbálja újra."
+    }
+  },
+  "footer": {
+    "title": "Turistaszálló Zádiel",
+    "subtitle": "Kényelmes pihenés a természetben",
+    "rights": "Minden jog fenntartva"
+  }
+}

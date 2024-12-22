@@ -2,8 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "./Navbar"; 
 
 const Gallery = () => {
+  const translations = useTranslations();
+
+  if (!translations) {
+    return null;
+  }
+
   return (
     <section id="gallery" className="py-20 bg-gray-50">
       <motion.div
@@ -14,15 +21,15 @@ const Gallery = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Gallery
+          {translations.gallery.title}
         </h2>
         <div className="flex flex-wrap flex-col md:flex-row items-center gap-4 justify-center mx-auto">
           {[...Array(6)].map((_, i) => (
             <motion.img
               key={i}
               src={`/${i}.jpg`}
-              alt={`Gallery image ${i + 1}`}
-              className="rounded-lg md:w-[45%] transition-opacity mx-auto"
+              alt={`${translations.gallery.title} ${i + 1}`}
+              className="rounded-lg md:w-[45%] transition-opacity mx-auto shadow-lg"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

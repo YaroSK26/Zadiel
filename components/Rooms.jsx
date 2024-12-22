@@ -4,8 +4,15 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "./Navbar";
 
-const Rooms= () => {
+const Rooms = () => {
+  const translations = useTranslations();
+
+  if (!translations) {
+    return null;
+  }
+
   return (
     <section
       id="accommodation"
@@ -29,13 +36,9 @@ const Rooms= () => {
           >
             <div>
               <h1 className="text-3xl md:text-4xl uppercase font-bold tracking-tight mb-4">
-                Accommodation in the Zádiel valley
+                {translations.rooms.title}
               </h1>
-              <p className="text-gray-700">
-                Accommodation in Turisticka Ubytovna Zádiel includes a garden,
-                free private parking and a terrace. There is also a wardrobe and
-                bed linen
-              </p>
+              <p className="text-gray-700">{translations.rooms.description}</p>
             </div>
 
             <div className="space-y-4">
@@ -49,7 +52,7 @@ const Rooms= () => {
                 <div className="p-2 rounded-full bg-gray-900">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </div>
-                <p>Room with a double bed</p>
+                <p>{translations.rooms.types.double}</p>
               </motion.div>
 
               <motion.div
@@ -62,7 +65,7 @@ const Rooms= () => {
                 <div className="p-2 rounded-full bg-gray-900">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </div>
-                <p>Quadruple room</p>
+                <p>{translations.rooms.types.quad}</p>
               </motion.div>
 
               <motion.div
@@ -75,7 +78,7 @@ const Rooms= () => {
                 <div className="p-2 rounded-full bg-gray-900">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </div>
-                <p>Room with 2 separate beds</p>
+                <p>{translations.rooms.types.twin}</p>
               </motion.div>
             </div>
             <br />
@@ -88,7 +91,7 @@ const Rooms= () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span>I want to book</span>
+                <span>{translations.rooms.bookButton}</span>
                 <ArrowRight className="w-4 h-4" />
               </motion.button>
             </Link>
@@ -105,9 +108,10 @@ const Rooms= () => {
             <div className="flex gap-4 flex-col justify-center sm:flex-row">
               <div className="relative">
                 <div className="absolute sm:text-[18px] text-[14px] uppercase text-center sm:rotate-12 sm:-left-2 -top-8 bg-gray-900 text-white lg:p-4 p-3 rounded-full z-10 font-medium">
-                  from <span className="sm:text-[22px] text-[16x]">30€</span>
+                  {translations.rooms.priceFrom}{" "}
+                  <span className="sm:text-[22px] text-[16x]">30€</span>
                   <br />
-                  per night
+                  {translations.rooms.perNight}
                 </div>
                 <motion.img
                   src="/chodba.jpg"

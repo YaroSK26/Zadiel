@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "ABOUT",
+    "accommodation": "ACCOMMODATION",
+    "gallery": "GALLERY",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "title": "Tourist accommodation Zádiel",
+    "subtitle": "amazing hostel for travelers",
+    "bookButton": "I want to book"
+  },
+  "about": {
+    "welcome": "Welcome to Zádiel",
+    "description": "Discover comfortable accommodation in the heart of Zádielská dolina. Ideal for hikers and nature lovers, with easy access to hiking trails.",
+    "amenities": {
+      "parking": "Free Parking",
+      "wifi": "Free WiFi",
+      "kitchen": "Shared Kitchen",
+      "location": "Great Location"
+    }
+  },
+  "rooms": {
+    "title": "Accommodation in the Zádiel valley",
+    "description": "Accommodation in Turisticka Ubytovna Zádiel includes a garden, free private parking and a terrace. There is also a wardrobe and bed linen",
+    "types": {
+      "double": "Room with a double bed",
+      "quad": "Quadruple room",
+      "twin": "Room with 2 separate beds"
+    },
+    "priceFrom": "from",
+    "perNight": "per night",
+    "bookButton": "I want to book"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": {
+      "label": "Address",
+      "value": "Zádiel 25, 044 02 Zádiel, Slovakia"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "+421 908 262 669"
+    },
+    "email": {
+      "label": "Email",
+      "value": "info@zadiel-accommodation.sk"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "title": "Tourist Accommodation Zádiel",
+    "subtitle": "Your comfortable stay in nature",
+    "rights": "All rights reserved"
+  }
+}

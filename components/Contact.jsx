@@ -1,23 +1,29 @@
-'use client'
+"use client";
 
-import React, { useState, useRef } from "react"
-import { MapPin, Phone, Mail } from 'lucide-react'
-import emailjs from "@emailjs/browser"
-import { Toaster, toast } from "react-hot-toast"
-import { motion } from 'framer-motion'
+import React, { useState, useRef } from "react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { Toaster, toast } from "react-hot-toast";
+import { motion } from "framer-motion";
+import { useTranslations } from "./Navbar";
 
 const Contact = () => {
-  const form = useRef(null)
-  const [loading, setLoading] = useState(false)
+  const translations = useTranslations();
+  const form = useRef(null);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  })
+  });
+
+  if (!translations) {
+    return null;
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -27,7 +33,7 @@ const Contact = () => {
         "ao9Pnvt-EA8-h9gBU"
       )
       .then(() => {
-        toast.success("Message sent successfully!");
+        toast.success(translations.contact.form.success);
         setFormData({
           name: "",
           email: "",
@@ -35,16 +41,16 @@ const Contact = () => {
         });
       })
       .catch(() => {
-        toast.error("Failed to send message. Please try again.");
+        toast.error(translations.contact.form.error);
       })
       .finally(() => {
         setLoading(false);
       });
-  }
+  };
 
   return (
-    <section id="contact" className="py-16 bg-white">
-      <motion.div 
+    <section id="contact" className="py-5 bg-white">
+      <motion.div
         className="container mx-auto max-w-7xl px-4"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -52,65 +58,75 @@ const Contact = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Contact Us
+          {translations.contact.title}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           {/* Left side - Contact Information */}
-          <motion.div 
+          <motion.div
             className="space-y-6"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <motion.div 
+            <motion.div
               className="flex items-center gap-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <MapPin className="h-6 w-6 text-gray-900" />
+              <MapPin className="h-6 w-6 text-[#111827]" />
               <div>
-                <h3 className="font-semibold">Address</h3>
+                <h3 className="font-semibold">
+                  {translations.contact.address.label}
+                </h3>
                 <p className="text-gray-600">
-                  Zádiel 25, 044 02 Zádiel, Slovakia
+                  {translations.contact.address.value}
                 </p>
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="flex items-center gap-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <Phone className="h-6 w-6 text-gray-900" />
+              <Phone className="h-6 w-6 text-[#111827]" />
               <div>
-                <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-600">+421 908 262 669</p>
+                <h3 className="font-semibold">
+                  {translations.contact.phone.label}
+                </h3>
+                <p className="text-gray-600">
+                  {translations.contact.phone.value}
+                </p>
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="flex items-center gap-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <Mail className="h-6 w-6 text-gray-900" />
+              <Mail className="h-6 w-6 text-[#111827]" />
               <div>
-                <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-600">info@zadiel-accommodation.sk</p>
+                <h3 className="font-semibold">
+                  {translations.contact.email.label}
+                </h3>
+                <p className="text-gray-600">
+                  {translations.contact.email.value}
+                </p>
               </div>
             </motion.div>
           </motion.div>
 
           {/* Right side - Contact Form */}
-          <motion.div 
+          <motion.div
             className="bg-gray-50 p-6 rounded-lg"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -123,7 +139,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Name
+                  {translations.contact.form.name}
                 </label>
                 <input
                   type="text"
@@ -143,7 +159,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Email
+                  {translations.contact.form.email}
                 </label>
                 <input
                   type="email"
@@ -163,7 +179,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Message
+                  {translations.contact.form.message}
                 </label>
                 <textarea
                   id="message"
@@ -182,17 +198,23 @@ const Contact = () => {
                 type="submit"
                 disabled={loading}
                 className={`w-full bg-gray-900 text-white py-2 px-4 rounded-md transition-colors duration-200 
-                  ${loading ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-800"}`}
+                  ${
+                    loading
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:bg-gray-800"
+                  }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {loading ? "Sending..." : "Send Message"}
+                {loading
+                  ? translations.contact.form.sending
+                  : translations.contact.form.send}
               </motion.button>
             </form>
           </motion.div>
         </div>
 
-        <motion.div 
+        <motion.div
           className="w-full"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -210,8 +232,7 @@ const Contact = () => {
       </motion.div>
       <Toaster position="top-right" />
     </section>
-  )
-}
+  );
+};
 
-export default Contact
-
+export default Contact;

@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "O NÁS",
+    "accommodation": "UBYTOVANIE",
+    "gallery": "GALÉRIA",
+    "contact": "KONTAKT"
+  },
+  "hero": {
+    "title": "Turistická ubytovňa Zádiel",
+    "subtitle": "úžasný hostel pre cestovateľov",
+    "bookButton": "Chcem rezervovať"
+  },
+  "about": {
+    "welcome": "Vitajte v Zádieli",
+    "description": "Objavte pohodlné ubytovanie v srdci Zádielskej doliny. Ideálne pre turistov a milovníkov prírody, s ľahkým prístupom k turistickým chodníkom.",
+    "amenities": {
+      "parking": "Bezplatné parkovanie",
+      "wifi": "Bezplatné WiFi",
+      "kitchen": "Spoločná kuchyňa",
+      "location": "Skvelá lokalita"
+    }
+  },
+  "rooms": {
+    "title": "Ubytovanie v Zádielskej doline",
+    "description": "Ubytovanie v Turistickej Ubytovni Zádiel zahŕňa záhradu, bezplatné súkromné parkovisko a terasu. K dispozícii je aj skriňa a posteľná bielizeň",
+    "types": {
+      "double": "Izba s manželskou posteľou",
+      "quad": "Štvorlôžková izba",
+      "twin": "Izba s 2 oddelenými lôžkami"
+    },
+    "priceFrom": "od",
+    "perNight": "za noc",
+    "bookButton": "Chcem rezervovať"
+  },
+  "gallery": {
+    "title": "Galéria"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "address": {
+      "label": "Adresa",
+      "value": "Zádiel 25, 044 02 Zádiel, Slovensko"
+    },
+    "phone": {
+      "label": "Telefón",
+      "value": "+421 908 262 669"
+    },
+    "email": {
+      "label": "Email",
+      "value": "info@zadiel-accommodation.sk"
+    },
+    "form": {
+      "name": "Meno",
+      "email": "Email",
+      "message": "Správa",
+      "send": "Odoslať správu",
+      "sending": "Odosielam...",
+      "success": "Správa bola úspešne odoslaná!",
+      "error": "Nepodarilo sa odoslať správu. Skúste to prosím znova."
+    }
+  },
+  "footer": {
+    "title": "Turistická ubytovňa Zádiel",
+    "subtitle": "Vaše pohodlné ubytovanie v prírode",
+    "rights": "Všetky práva vyhradené"
+  }
+}
