@@ -10,6 +10,11 @@
     "subtitle": "amazing hostel for travelers",
     "bookButton": "I want to book"
   },
+  "error": {
+    "title": "404 Error",
+    "subtitle": "page not found",
+    "button": "Back"
+  },
   "about": {
     "welcome": "Welcome to Zádiel",
     "description": "Discover comfortable accommodation in the heart of Zádielská dolina. Ideal for hikers and nature lovers, with easy access to hiking trails.",
@@ -34,7 +39,8 @@
   },
   "gallery": {
     "title": "Gallery"
-  },"surroundings": {
+  },
+  "surroundings": {
     "title": "What's in the surroundings",
     "nationalPark": "Slovak Karst National Park",
     "restiFortuna": "Resti - Fortuna Restaurant",
@@ -43,7 +49,7 @@
     "stosSkiLift": "Štós Ski Lift",
     "trainTornanadaska": "Tornanádaska Train",
     "kosiceAirport": "Košice International Airport"
-},
+  },
   "contact": {
     "title": "Contact Us",
     "address": {

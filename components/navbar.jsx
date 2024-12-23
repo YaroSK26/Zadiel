@@ -96,10 +96,10 @@ export const Navbar = () => {
 
   const navItems = translations?.nav
     ? [
-        { label: translations.nav.about, href: "#about" },
-        { label: translations.nav.accommodation, href: "#accommodation" },
-        { label: translations.nav.gallery, href: "#gallery" },
-        { label: translations.nav.contact, href: "#contact" },
+        { label: translations.nav.about, href: "/#about" },
+        { label: translations.nav.accommodation, href: "/#accommodation" },
+        { label: translations.nav.gallery, href: "/#gallery" },
+        { label: translations.nav.contact, href: "/#contact" },
       ]
     : [];
 

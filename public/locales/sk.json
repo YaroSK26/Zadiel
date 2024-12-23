@@ -10,6 +10,11 @@
     "subtitle": "úžasný hostel pre cestovateľov",
     "bookButton": "Chcem rezervovať"
   },
+  "error": {
+    "title": "404 Chyba",
+    "subtitle": "stránka nebola nájdená",
+    "button": "Späť"
+  },
   "about": {
     "welcome": "Vitajte v Zádieli",
     "description": "Objavte pohodlné ubytovanie v srdci Zádielskej doliny. Ideálne pre turistov a milovníkov prírody, s ľahkým prístupom k turistickým chodníkom.",
@@ -32,7 +37,7 @@
     "perNight": "za noc",
     "bookButton": "Chcem rezervovať"
   },
-   "surroundings": {
+  "surroundings": {
     "title": "Čo sa nachádza v okolí",
     "nationalPark": "Národný park Slovenský Kras",
     "restiFortuna": "Reštaurácia Resti - Fortuna",

@@ -11,6 +11,11 @@
     "subtitle": "csodálatos szálláshely utazóknak",
     "bookButton": "Foglalni szeretnék"
   },
+  "error": {
+    "title": "404 Hiba",
+    "subtitle": "az oldal nem található",
+    "button": "Vissza"
+  },
   "about": {
     "welcome": "Üdvözöljük Zádielban",
     "description": "Fedezze fel a kényelmes szállást Zádielska dolina szívében. Ideális túrázóknak és természetkedvelőknek, könnyű hozzáféréssel a túraútvonalakhoz.",
@@ -35,7 +40,8 @@
   },
   "gallery": {
     "title": "Galéria"
-  },"surroundings": {
+  },
+  "surroundings": {
     "title": "Mi található a környéken",
     "nationalPark": "Szlovák Karszt Nemzeti Park",
     "restiFortuna": "Resti - Fortuna Étterem",
@@ -44,8 +50,7 @@
     "stosSkiLift": "Štós Sífelvonó",
     "trainTornanadaska": "Tornanádaska Vonat",
     "kosiceAirport": "Kassa Nemzetközi Repülőtér"
-}
-,
+  },
   "contact": {
     "title": "Lépjen kapcsolatba velünk",
     "address": {
