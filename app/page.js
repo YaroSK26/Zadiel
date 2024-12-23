@@ -60,7 +60,6 @@ export default function Page() {
       >
         <Contact />
       </motion.div>
-      <Footer />
     </div>
   );
 }
