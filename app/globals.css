@@ -95,3 +95,31 @@ input:-webkit-autofill:active{
  #accommodation,#contact, #gallery, #about {
   scroll-margin-top: 100px;
 }
+
+
+
+/* Pre Chrome, Edge a Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111827;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080808;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111827;
+}
+
+/* Pre Firefox */
+html {
+    scrollbar-color: #111827 #3e3e3e;
+    scrollbar-width: thin;
+}

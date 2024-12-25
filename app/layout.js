@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistMonoBold.variable} antialiased`}>
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
