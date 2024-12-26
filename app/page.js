@@ -1,6 +1,4 @@
 "use client";
-import Footer from "../components/Footer";
-import { Navbar } from "../components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Rooms from "@/components/Rooms";
@@ -8,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
 import SurroundingsSection from "@/components/SurroundingsSection";
+import useLenis from "../components/lenis";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -16,6 +15,7 @@ const fadeInUp = {
 };
 
 export default function Page() {
+  useLenis();
   return (
     <div className="min-h-screen">
      
