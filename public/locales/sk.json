@@ -27,18 +27,20 @@
   },
   "rooms": {
     "title": "Ubytovanie v Zádielskej doline",
-    "description": "Ubytovanie v Turistickej Ubytovni Zádiel zahŕňa záhradu, bezplatné súkromné parkovisko a terasu. K dispozícii je aj skriňa a posteľná bielizeň",
+    "description": "V Turistickej Ubytovni Zádiel nájdete informačné centrum, malé obecné múzeum a moderné ubytovanie. Ponúka jednu štvorlôžkovú a sedem dvojlôžkových izieb, plne vybavenú kuchyňu s jedálňou a spoločenskú miestnosť pre 50 osôb, ideálnu na konferencie, firemné akcie, oslavy či svadby. Ubytovanie zahŕňa záhradu, bezplatné parkovanie a terasu. Izby sú vybavené skriňami a posteľnou bielizňou. To všetko za výhodné ceny a s maximálnym komfortom.",
     "types": {
       "double": "Izba s manželskou posteľou",
       "quad": "Štvorlôžková izba",
       "twin": "Izba s 2 oddelenými lôžkami"
     },
     "priceFrom": "od",
+    "price": " 25€",
     "perNight": "za noc",
     "bookButton": "Chcem rezervovať"
   },
   "surroundings": {
     "title": "Čo sa nachádza v okolí",
+    "museum": "Informačné centrum a múzeum Zadiel",
     "nationalPark": "Národný park Slovenský Kras",
     "restiFortuna": "Reštaurácia Resti - Fortuna",
     "gasthofLevanda": "Reštaurácia Gasthof Levanda",
@@ -58,11 +60,11 @@
     },
     "phone": {
       "label": "Telefón",
-      "value": "+421 908 262 669"
+      "value": "+421 949 643 070"
     },
     "email": {
       "label": "Email",
-      "value": "info@zadiel-accommodation.sk"
+      "value": "zadielubytovna@gmail.com"
     },
     "form": {
       "name": "Meno",

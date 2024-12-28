@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "about": "RÓLUNK",
@@ -28,7 +27,7 @@
   },
   "rooms": {
     "title": "Szállás a Zádiel völgyben",
-    "description": "A Turistaszálló Zádiel szálláshely kerttel, ingyenes privát parkolóval és terasszal rendelkezik. Ruhásszekrény és ágynemű is biztosított.",
+    "description": "A Zádiel Turistaszállón információs központ, egy kis községi múzeum és modern szállás várja a vendégeket. Egy négyágyas és hét kétágyas szobát kínál, teljesen felszerelt konyhával és étkezővel, valamint egy 50 fős közösségi helyiséggel, amely ideális konferenciákra, céges rendezvényekre, ünnepségekre vagy esküvőkre. A szállás magában foglal egy kertet, ingyenes privát parkolót és egy teraszt. A szobák szekrényekkel és ágyneművel felszereltek. Mindez kedvező árakon és maximális kényelemmel.",
     "types": {
       "double": "Szoba franciaággyal",
       "quad": "Négyágyas szoba",
@@ -36,6 +35,7 @@
     },
     "priceFrom": "tól",
     "perNight": "éjszakánként",
+    "price": " 12 300 HUF",
     "bookButton": "Foglalni szeretnék"
   },
   "gallery": {
@@ -43,6 +43,7 @@
   },
   "surroundings": {
     "title": "Mi található a környéken",
+    "museum": "Zadiel Információs Központ és Múzeum ",
     "nationalPark": "Szlovák Karszt Nemzeti Park",
     "restiFortuna": "Resti - Fortuna Étterem",
     "gasthofLevanda": "Gasthof Levanda Étterem",
@@ -59,11 +60,11 @@
     },
     "phone": {
       "label": "Telefon",
-      "value": "+421 908 262 669"
+      "value": "+421 949 643 070"
     },
     "email": {
       "label": "Email",
-      "value": "info@zadiel-accommodation.sk"
+      "value": "zadielubytovna@gmail.com"
     },
     "form": {
       "name": "Név",

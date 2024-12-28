@@ -24,12 +24,12 @@ const Gallery = () => {
           {translations.gallery.title}
         </h2>
         <div className="flex flex-wrap flex-col md:flex-row items-center gap-4 justify-center mx-auto">
-          {[...Array(6)].map((_, i) => (
+          {[...Array(9)].map((_, i) => (
             <motion.img
               key={i}
               src={`/${i}.jpg`}
               alt={`${translations.gallery.title} ${i + 1}`}
-              className="rounded-lg md:w-[45%] transition-opacity mx-auto shadow-lg"
+              className="rounded-lg md:w-[30%] transition-opacity mx-auto shadow-lg"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

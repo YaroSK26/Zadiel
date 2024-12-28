@@ -27,13 +27,14 @@
   },
   "rooms": {
     "title": "Accommodation in the Zádiel valley",
-    "description": "Accommodation in Turisticka Ubytovna Zádiel includes a garden, free private parking and a terrace. There is also a wardrobe and bed linen",
+    "description": "At the Tourist Hostel Zádiel, you will find an information center, a small municipal museum, and modern accommodation. It offers one four-bed room and seven double rooms, a fully equipped kitchen with a dining area, and a common room for 50 people, perfect for conferences, corporate events, celebrations, or weddings. The accommodation includes a garden, free private parking, and a terrace. The rooms are equipped with wardrobes and bed linen. All this at affordable prices and with maximum comfort.",
     "types": {
       "double": "Room with a double bed",
       "quad": "Quadruple room",
       "twin": "Room with 2 separate beds"
     },
     "priceFrom": "from",
+    "price": " 20£",
     "perNight": "per night",
     "bookButton": "I want to book"
   },
@@ -42,6 +43,7 @@
   },
   "surroundings": {
     "title": "What's in the surroundings",
+    "museum": "Zadiel Information Center and Museum",
     "nationalPark": "Slovak Karst National Park",
     "restiFortuna": "Resti - Fortuna Restaurant",
     "gasthofLevanda": "Gasthof Levanda Restaurant",
@@ -58,11 +60,11 @@
     },
     "phone": {
       "label": "Phone",
-      "value": "+421 908 262 669"
+      "value": "+421 949 643 070"
     },
     "email": {
       "label": "Email",
-      "value": "info@zadiel-accommodation.sk"
+      "value": "zadielubytovna@gmail.com"
     },
     "form": {
       "name": "Name",

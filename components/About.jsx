@@ -3,7 +3,7 @@
 import React from "react";
 import { Wifi, Car, MapPin, Home } from "lucide-react";
 import { motion } from "framer-motion";
-import { useTranslations } from "./Navbar"; // Import the hook
+import { useTranslations } from "./Navbar"; 
 
 const About = () => {
   const translations = useTranslations(); 
@@ -64,7 +64,7 @@ const About = () => {
           <motion.img
             src="/kuchyna2.jpg"
             alt={translations.about.welcome}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg max-h-[400px]"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

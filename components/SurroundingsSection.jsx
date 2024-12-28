@@ -13,6 +13,7 @@ import {
   CableCar,
   MapPinCheck,
   Utensils,
+  Amphora,
 } from "lucide-react";
 import { useTranslations } from "./Navbar";
 import { motion } from "framer-motion";
@@ -45,6 +46,13 @@ const SurroundingsSection = () => {
   }, []);
 
   const surroundings = [
+    {
+      name:
+        translations?.surroundings?.museum ||
+        "Informačné centrum a múzeum Zadiel",
+      distance: "0 km",
+      icon: <Amphora  />,
+    },
     {
       name:
         translations?.surroundings?.nationalPark ||
