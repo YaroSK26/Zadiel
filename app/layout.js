@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 
 const geistMonoBold = localFont({
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
     <html lang="sk">
       <body className={`${geistMonoBold.variable} antialiased`}>
         <Header />
+        <Analytics/>
         {children}
         <Footer />
       </body>
