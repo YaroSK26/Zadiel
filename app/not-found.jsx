@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useTranslations } from "../components/Navbar";
+import { useTranslations } from "../components/UseTranslation";
 
 const Hero = () => {
   const translations = useTranslations();
