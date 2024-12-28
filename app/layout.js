@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 
 const geistMonoBold = localFont({
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="sk">
       <body className={`${geistMonoBold.variable} antialiased`}>
-        <Navbar />
+        <Header />
         {children}
         <Footer />
       </body>

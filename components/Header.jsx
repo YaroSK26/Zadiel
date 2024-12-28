@@ -57,7 +57,7 @@ const LanguageSwitcher = ({ isMobile = false }) => {
   );
 };
 
-const Navbar = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -233,4 +233,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
