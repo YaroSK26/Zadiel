@@ -24,13 +24,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    console.log("Form Data Sent:", form.current);
+
+    console.log("Form Data:", formData);
 
     emailjs
       .sendForm(
-        "service_81tw9xw",
-        "template_m37okw1",
+        "service_21882vf",
+        "template_jx3r56g",
         form.current,
-        "ao9Pnvt-EA8-h9gBU"
+        "8wdEpJK6WIZwAQvgx"
       )
       .then(() => {
         toast.success(translations.contact.form.success);
@@ -144,7 +147,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  name="user_name"
+                  name="name"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#111827] focus:border-transparent"
                   value={formData.name}
                   onChange={(e) =>
@@ -164,7 +167,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="user_email"
+                  name="email"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#111827] focus:border-transparent"
                   value={formData.email}
                   onChange={(e) =>
