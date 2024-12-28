@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "react-hot-toast";
 import { motion } from "framer-motion";
-import { useTranslations } from "./Navbar";
+import { useTranslations } from "./UseTranslation";
 
 const Contact = () => {
   const translations = useTranslations();

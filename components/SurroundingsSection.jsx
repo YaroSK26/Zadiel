@@ -15,7 +15,7 @@ import {
   Utensils,
   Amphora,
 } from "lucide-react";
-import { useTranslations } from "./Navbar";
+import { useTranslations } from "./UseTranslation";
 import { motion } from "framer-motion";
 
 const SurroundingsSection = () => {
@@ -51,7 +51,7 @@ const SurroundingsSection = () => {
         translations?.surroundings?.museum ||
         "Informačné centrum a múzeum Zadiel",
       distance: "0 km",
-      icon: <Amphora  />,
+      icon: <Amphora />,
     },
     {
       name:

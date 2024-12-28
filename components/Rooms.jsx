@@ -4,7 +4,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useTranslations } from "./Navbar";
+import { useTranslations } from "./UseTranslation";
 
 const Rooms = () => {
   const translations = useTranslations();

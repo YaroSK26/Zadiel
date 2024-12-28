@@ -3,10 +3,10 @@
 import React from "react";
 import { Wifi, Car, MapPin, Home } from "lucide-react";
 import { motion } from "framer-motion";
-import { useTranslations } from "./Navbar"; 
+import { useTranslations } from "./UseTranslation";
 
 const About = () => {
-  const translations = useTranslations(); 
+  const translations = useTranslations();
 
   // If translations aren't loaded yet, you might want to show a loading state
   if (!translations) {

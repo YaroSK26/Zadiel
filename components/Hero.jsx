@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useTranslations } from "../components/Navbar";
+import { useTranslations } from "../components/UseTranslation";
 
 const Hero = () => {
   const translations = useTranslations();
@@ -45,11 +45,9 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            {translations?.hero?.subtitle }
+            {translations?.hero?.subtitle}
           </motion.p>
-          <Link
-            href="/#contact"
-          >
+          <Link href="/#contact">
             <motion.button
               className="flex uppercase mx-auto items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full border-none hover:bg-gray-800 transition-colors"
               whileHover={{ scale: 1.05 }}

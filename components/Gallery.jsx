@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { useTranslations } from "./Navbar"; 
+import { useTranslations } from "./UseTranslation";
 
 const Gallery = () => {
   const translations = useTranslations();
