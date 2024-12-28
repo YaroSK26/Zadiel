@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Wifi, Car, MapPin, Home } from "lucide-react";
+import { Wifi, Car, MapPin, Home,Baby,Dog } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "./UseTranslation";
 
@@ -18,6 +18,8 @@ const About = () => {
     { icon: Wifi, text: translations.about.amenities.wifi },
     { icon: Home, text: translations.about.amenities.kitchen },
     { icon: MapPin, text: translations.about.amenities.location },
+    { icon: Baby, text: translations.about.amenities.baby },
+    { icon: Dog, text: translations.about.amenities.dog },
   ];
 
   return (

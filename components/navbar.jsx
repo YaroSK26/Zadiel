@@ -57,7 +57,7 @@ const LanguageSwitcher = ({ isMobile = false }) => {
   );
 };
 
-export const Navbar = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isWideScreen, setIsWideScreen] = useState(false);

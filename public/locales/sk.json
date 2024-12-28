@@ -22,7 +22,9 @@
       "parking": "Bezplatné parkovanie",
       "wifi": "Bezplatné WiFi",
       "kitchen": "Spoločná kuchyňa",
-      "location": "Skvelá lokalita"
+      "location": "Skvelá lokalita",
+      "baby" : "Deti do 3 rokov zadarmo",
+      "dog" : "Zvieratá povolené"
     }
   },
   "rooms": {

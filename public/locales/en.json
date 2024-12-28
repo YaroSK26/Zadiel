@@ -22,7 +22,9 @@
       "parking": "Free Parking",
       "wifi": "Free WiFi",
       "kitchen": "Shared Kitchen",
-      "location": "Great Location"
+      "location": "Great Location",
+      "baby": "Children under 3 years free",
+      "dog": "Pets allowed"
     }
   },
   "rooms": {

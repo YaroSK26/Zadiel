@@ -22,7 +22,9 @@
       "parking": "Ingyenes parkolás",
       "wifi": "Ingyenes WiFi",
       "kitchen": "Közös konyha",
-      "location": "Kiváló elhelyezkedés"
+      "location": "Kiváló elhelyezkedés",
+      "baby": "3 év alatti gyermekek ingyen",
+      "dog": "Háziállatok engedélyezettek"
     }
   },
   "rooms": {
