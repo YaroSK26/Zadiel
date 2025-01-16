@@ -19,9 +19,11 @@ export const metadata = {
     "hu-HU": "Zádiel Turista Szálló",
   },
   description:
-    "Objavte pohodlné ubytovanie v srdci Zádielskej doliny. Ideálne pre turistov a milovníkov prírody, s ľahkým prístupom k turistickým chodníkom.",
+    "Turistická ubytovňa Zádiel. Objavte pohodlné ubytovanie v srdci Zádielskej doliny. Ideálne pre turistov a milovníkov prírody, s ľahkým prístupom k turistickým chodníkom.",
   keywords: [
     "ubytovanie",
+    "ubytovňa",
+    "hostel",
     "Zádiel",
     "turistika",
     "Zádielska dolina",

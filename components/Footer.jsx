@@ -11,6 +11,7 @@ const Footer = () => {
   if (!translations) {
     return null;
   }
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white py-8">
@@ -56,7 +57,9 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <p className="text-gray-400">© 2024 {translations.footer.rights}</p>
+            <p className="text-gray-400">
+              © {currentYear} {translations.footer.rights}
+            </p>
             <a
               href="https://www.jaroslav.website/"
               target="_blank"

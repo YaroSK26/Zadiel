@@ -57,7 +57,7 @@ const SurroundingsSection = () => {
       name:
         translations?.surroundings?.nationalPark ||
         "Národný park Slovenský Kras",
-      distance: "8 km",
+      distance: "0 km",
       icon: <MapPinCheck />,
     },
     {
