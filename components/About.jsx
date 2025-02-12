@@ -8,7 +8,6 @@ import { useTranslations } from "./UseTranslation";
 const About = () => {
   const translations = useTranslations();
 
-  // If translations aren't loaded yet, you might want to show a loading state
   if (!translations) {
     return null;
   }
