@@ -22,7 +22,6 @@ const SurroundingsSection = () => {
   const translations = useTranslations();
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -106,6 +105,12 @@ const SurroundingsSection = () => {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.3 }}
     >
+      <div className="mx-52 text-center flex justify-center items-center flex-col mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          {translations?.dolina}
+        </h2>
+        <p>{translations?.dolinaText}</p>
+      </div>
       <Card
         id="surroundings-section"
         ref={sectionRef}

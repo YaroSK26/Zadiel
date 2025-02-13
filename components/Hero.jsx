@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "../components/UseTranslation";
+import { ShimmerButton } from "./magicui/shimmer-button";
 
 const Hero = () => {
   const translations = useTranslations();
@@ -49,12 +50,15 @@ const Hero = () => {
           </motion.p>
           <Link href="/#contact">
             <motion.button
-              className="flex uppercase mx-auto items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full border-none hover:bg-gray-800 transition-colors"
+              className="flex uppercase mx-auto items-center gap-2  bg-gray-900 text-white rounded-full border-none hover:bg-gray-800 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span>{translations?.hero?.bookButton}</span>
+               <ShimmerButton className="shadow-2xl">
+
+              {translations?.hero?.bookButton}
               <ArrowRight className="w-4 h-4" />
+               </ShimmerButton>
             </motion.button>
           </Link>
         </div>
