@@ -61,7 +61,7 @@ const Footer = () => {
               © {currentYear} {translations.footer.rights}
             </p>
             <a
-              href="https://www.jaroslav.website/"
+              href="https://www.jaroslav-portfolio.eu/"
               target="_blank"
               className="underline"
             >
